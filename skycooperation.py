@@ -54,4 +54,4 @@ async def krill(ctx,*, victim):
         await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
         await asyncio.sleep(time_step)
     await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
-client.run(BOT_KEY)
+client.run(os.environ['BOT_KEY'])
