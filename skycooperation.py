@@ -12,19 +12,6 @@ client = commands.Bot(command_prefix ='.')
 async def on_ready():
     print('I am ready!')
 
-@client.event
-async def on_member_join(member):
-    print(f'{member} has joined the server')
-
-@client.event
-async def on_member_remove(member):
-    print(f'{member} has left the server')
-
-@client.command()
-async def ping(ctx):
-    await ctx.send('Madafaka')
-    print('haha')
-
 @client.command()
 async def krill(ctx,*, victim):
     def __init__(self, bot):
@@ -67,4 +54,4 @@ async def krill(ctx,*, victim):
         await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
         await asyncio.sleep(time_step)
     await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
-client.run('NzA5OTA0MzM1MDQ3MzYwNjMy.XrswHg.jz1nbd1-ZUgu2mktZYsIBJiNHP8')
+client.run(process.env.BOT_KEY)
