@@ -67,4 +67,4 @@ async def krill(ctx,*, victim):
         await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
         await asyncio.sleep(time_step)
     await message.edit(content=f"{secaps}{star}{spaces}{ded} {victim_name}{spaces}{star}{spaces}{star}")
-client.run('process.env.BOT_TOKEN')
+client.run('NzA5OTA0MzM1MDQ3MzYwNjMy.XrswHg.jz1nbd1-ZUgu2mktZYsIBJiNHP8')
